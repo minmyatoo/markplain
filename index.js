@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });
 
-app.post('/convert', (req, res) => {
+app.post('/markplain/convert', (req, res) => {
     const mdText = req.body.markdown;
 
     // Convert Markdown to HTML using 'showdown' library
