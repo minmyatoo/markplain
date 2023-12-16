@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <title>Markdown to Plain Text Converter</title>
+</head>
+<body class="container mt-5">
+
+<header>
+  <h1 class="mb-4">Markdown to Plain Text Converter</h1>
+</header>
+
+<main>
+  <form action="/convert" method="post">
+    <div class="mb-3">
+      <label for="markdownInput" class="form-label">Enter Markdown Text:</label>
+      <textarea
+              class="form-control"
+              id="markdownInput"
+              name="markdown"
+              rows="10"
+              required
+      ></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Convert</button>
+  </form>
+
+  <div id="result" class="mt-4"></div>
+</main>
+
+<footer>
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <p>&copy; 2023 Mike with ❤️</p>
+</footer>
+
+</body>
+</html>

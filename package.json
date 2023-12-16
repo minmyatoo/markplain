@@ -1,0 +1,21 @@
+{
+  "name": "md",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "html-to-text": "^9.0.5",
+    "marked": "^11.1.0",
+    "showdown": "^2.1.0",
+    "xpress": "^2.4.6"
+  }
+}
