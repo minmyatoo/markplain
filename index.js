@@ -4,9 +4,9 @@ const marked = require('marked');
 const showdown = require('showdown');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static('node_modules/bootstrap/dist'));
 
 app.get('/', (req, res) => {
@@ -102,6 +102,12 @@ app.post('/convert', (req, res) => {
     `);
 });
 
-app.listen(port, () => {
-    console.log(`Server is running at http://localhost:${port}`);
-});
+// Export app for testing or other use (e.g., running in GitHub Actions)
+module.exports = app;
+
+// If the script is run directly, start the server
+if (require.main === module) {
+    app.listen(port, () => {
+        console.log(`Server is running at http://localhost:${port}`);
+    });
+}
