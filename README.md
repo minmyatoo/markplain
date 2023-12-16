@@ -1,5 +1,7 @@
 # Markdown to Plain Text Converter
 
+![img.png](img.png)
+
 This is a simple web application that converts Markdown text to plain text. It provides a user-friendly interface for entering Markdown text and viewing the corresponding plain text and HTML results. Additionally, it displays the current time, line count, and word count dynamically.
 
 ## Features
